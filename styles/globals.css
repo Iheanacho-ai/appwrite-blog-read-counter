@@ -1,16 +1,81 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
+.blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
 }
+.nav{
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    margin-bottom: 30px;
+}
+.blog-container{
+    width: 40%;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 
-* {
-  box-sizing: border-box;
+}
+.writer-image{
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+    border-radius: 50%;
+    background-image: url('https://images.pexels.com/photos/3482526/pexels-photo-3482526.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.writer-name{
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #888;
+}
+.blog-header h3{
+    text-align: left;
+    font-weight: 700;
+    font-size: 18px;
+}
+.blog-header h2{
+    font-weight: 700;
+    font-size: 34px;
+    color: #000;
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+.blog-header p{
+    margin-bottom: 15px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #888;
+}
+.blog-image{
+   width: 85%;
+   height: 400px; 
+   background-image: url('https://images.pexels.com/photos/1445416/pexels-photo-1445416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   margin-bottom: 30px;
+}
+.blog-story-container{
+    text-align: left;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.blog-story-container p{
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #888;
 }
